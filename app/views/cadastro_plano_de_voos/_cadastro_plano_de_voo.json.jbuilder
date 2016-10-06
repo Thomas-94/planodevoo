@@ -1,0 +1,2 @@
+json.extract! cadastro_plano_de_voo, :id, :objetivos, :frequencia_voo, :duracao_voo, :numero_estacoes, :localizacao_estacoes, :transferencia, :local_decolagem, :requisitos_decolagem, :requisitos_pouso, :rota, :carga_util, :altura_maxima, :local_destino, :data_voo, :codigo_chamada, :regras_voo, :tipo_operacao, :id_operador, :created_at, :updated_at
+json.url cadastro_plano_de_voo_url(cadastro_plano_de_voo, format: :json)

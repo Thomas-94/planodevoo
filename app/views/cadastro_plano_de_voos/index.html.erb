@@ -1,0 +1,61 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cadastro Plano De Voos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Objetivos</th>
+      <th>Frequencia voo</th>
+      <th>Duracao voo</th>
+      <th>Numero estacoes</th>
+      <th>Localizacao estacoes</th>
+      <th>Transferencia</th>
+      <th>Local decolagem</th>
+      <th>Requisitos decolagem</th>
+      <th>Requisitos pouso</th>
+      <th>Rota</th>
+      <th>Carga util</th>
+      <th>Altura maxima</th>
+      <th>Local destino</th>
+      <th>Data voo</th>
+      <th>Codigo chamada</th>
+      <th>Regras voo</th>
+      <th>Tipo operacao</th>
+      <th>Id operador</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cadastro_plano_de_voos.each do |cadastro_plano_de_voo| %>
+      <tr>
+        <td><%= cadastro_plano_de_voo.objetivos %></td>
+        <td><%= cadastro_plano_de_voo.frequencia_voo %></td>
+        <td><%= cadastro_plano_de_voo.duracao_voo %></td>
+        <td><%= cadastro_plano_de_voo.numero_estacoes %></td>
+        <td><%= cadastro_plano_de_voo.localizacao_estacoes %></td>
+        <td><%= cadastro_plano_de_voo.transferencia %></td>
+        <td><%= cadastro_plano_de_voo.local_decolagem %></td>
+        <td><%= cadastro_plano_de_voo.requisitos_decolagem %></td>
+        <td><%= cadastro_plano_de_voo.requisitos_pouso %></td>
+        <td><%= cadastro_plano_de_voo.rota %></td>
+        <td><%= cadastro_plano_de_voo.carga_util %></td>
+        <td><%= cadastro_plano_de_voo.altura_maxima %></td>
+        <td><%= cadastro_plano_de_voo.local_destino %></td>
+        <td><%= cadastro_plano_de_voo.data_voo %></td>
+        <td><%= cadastro_plano_de_voo.codigo_chamada %></td>
+        <td><%= cadastro_plano_de_voo.regras_voo %></td>
+        <td><%= cadastro_plano_de_voo.tipo_operacao %></td>
+        <td><%= cadastro_plano_de_voo.id_operador %></td>
+        <td><%= link_to 'Show', cadastro_plano_de_voo %></td>
+        <td><%= link_to 'Edit', edit_cadastro_plano_de_voo_path(cadastro_plano_de_voo) %></td>
+        <td><%= link_to 'Destroy', cadastro_plano_de_voo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cadastro Plano De Voo', new_cadastro_plano_de_voo_path %>

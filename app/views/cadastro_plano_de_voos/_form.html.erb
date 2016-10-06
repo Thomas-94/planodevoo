@@ -1,0 +1,107 @@
+<%= form_for(cadastro_plano_de_voo) do |f| %>
+  <% if cadastro_plano_de_voo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(cadastro_plano_de_voo.errors.count, "error") %> prohibited this cadastro_plano_de_voo from being saved:</h2>
+
+      <ul>
+      <% cadastro_plano_de_voo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :objetivos %>
+    <%= f.text_area :objetivos %>
+  </div>
+
+  <div class="field">
+    <%= f.label :frequencia_voo %>
+    <%= f.text_field :frequencia_voo %>
+  </div>
+
+  <div class="field">
+    <%= f.label :duracao_voo %>
+    <%= f.text_field :duracao_voo %>
+  </div>
+
+  <div class="field">
+    <%= f.label :numero_estacoes %>
+    <%= f.text_field :numero_estacoes %>
+  </div>
+
+  <div class="field">
+    <%= f.label :localizacao_estacoes %>
+    <%= f.text_area :localizacao_estacoes %>
+  </div>
+
+  <div class="field">
+    <%= f.label :transferencia %>
+    <%= f.text_field :transferencia %>
+  </div>
+
+  <div class="field">
+    <%= f.label :local_decolagem %>
+    <%= f.text_area :local_decolagem %>
+  </div>
+
+  <div class="field">
+    <%= f.label :requisitos_decolagem %>
+    <%= f.text_area :requisitos_decolagem %>
+  </div>
+
+  <div class="field">
+    <%= f.label :requisitos_pouso %>
+    <%= f.text_area :requisitos_pouso %>
+  </div>
+
+  <div class="field">
+    <%= f.label :rota %>
+    <%= f.text_area :rota %>
+  </div>
+
+  <div class="field">
+    <%= f.label :carga_util %>
+    <%= f.text_area :carga_util %>
+  </div>
+
+  <div class="field">
+    <%= f.label :altura_maxima %>
+    <%= f.text_area :altura_maxima %>
+  </div>
+
+  <div class="field">
+    <%= f.label :local_destino %>
+    <%= f.text_field :local_destino %>
+  </div>
+
+  <div class="field">
+    <%= f.label :data_voo %>
+    <%= f.datetime_select :data_voo %>
+  </div>
+
+  <div class="field">
+    <%= f.label :codigo_chamada %>
+    <%= f.text_area :codigo_chamada %>
+  </div>
+
+  <div class="field">
+    <%= f.label :regras_voo %>
+    <%= f.text_area :regras_voo %>
+  </div>
+
+  <div class="field">
+    <%= f.label :tipo_operacao %>
+    <%= f.text_field :tipo_operacao %>
+  </div>
+
+  <div class="field">
+    <%= f.label :id_operador %>
+    <%= f.text_field :id_operador %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

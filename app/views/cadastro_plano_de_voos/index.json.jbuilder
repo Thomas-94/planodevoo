@@ -1,0 +1,1 @@
+json.array! @cadastro_plano_de_voos, partial: 'cadastro_plano_de_voos/cadastro_plano_de_voo', as: :cadastro_plano_de_voo
